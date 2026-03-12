@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none; /* Corrigé : 0 n'est pas valide en CSS pour ça */
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px; /* Aligné avec la hauteur du header */
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+body {
+    background-color: #111;
+    overflow-x: hidden; /* Empêche le scroll horizontal accidentel */
+}
+section {
+    margin-top: 50px;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a {
+    font-size: 25px;
+    color: pink;
+    font-weight: bold;
+}
+header .logo a span {
+    color: #fff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+.menu li a:hover {
+    color: pink;
+}
+.btn-reservation {
+    color: pink;
+    font-size: 14px;
+    border: 2px solid pink;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.btn-reservation:hover {
+    background-color: pink;
+    color: #111;
+}
+
+/* --- ACCUEIL --- */
+#home {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+}
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #fff; /* Corrigé la syntaxe */
+    color: transparent;
+    text-transform: lowercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#home p {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.home-btn {
+    display: none; /* Masqué sur PC, géré par le header */
+}
+
+/* --- RECHERCHE --- */
+.find_trip {
+    background-color: #222;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 15px;
+}
+.find_trip form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Remplace les width: 20% fixes */
+}
+.find_trip form label {
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.find_trip form input {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid pink;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+}
+.find_trip form input[type="submit"] {
+    flex: 0.5;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #111;
+    background-color: pink;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.find_trip form input[type="submit"]:hover {
+    box-shadow: 0 0 10px pink;
+}
+
+/* --- A PROPOS --- */
+#a-propos {
+    margin-top: 120px; /* Plus d'espace pour la barre de recherche */
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
+}
+.title {
+    text-transform: capitalize;
+    margin: 40px 0;
+    font-weight: bold;
+    color: pink;
+    position: relative;
+    margin-left: 15px;
+    font-size: 22px;
+}
+.title::after {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 4px;
+    border-radius: 5px;
+}
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+.img-desc .left {
+    position: relative;
+    width: 45%;
+}
+.img-desc .left video {
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+    border-radius: 10px;
+}
+.img-desc .left::after {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    z-index: -1;
+    border-radius: 10px;
+}
+.img-desc .right {
+    width: 50%;
+}
+.img-desc .right h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.img-desc .right p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.img-desc .right a {
+    border: 2px solid pink;
+    color: pink;
+    font-size: 14px;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.img-desc .right a:hover {
+    background: pink;
+    color: #111;
+}
+
+/* --- DESTINATIONS --- */
+#popular-destination {
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+/* Nouvelle classe pour éviter le conflit */
+.box .box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+.box .box-overlay h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #111;
+}
+.box .box-overlay p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.box .box-overlay a {
+    margin-top: 15px;
+    padding: 8px 25px;
+    border: 2px solid pink;
+    color: pink;
+    font-weight: bold;
+    border-radius: 5px;
+    background: #111;
+    transition: 0.3s;
+}
+.box .box-overlay a:hover {
+    background: pink;
+    color: #111;
+}
+.box:hover img {
+    transform: scale(1.1);
+}
+.box:hover .box-overlay {
+    transform: translateX(0);
+}
+
+/* --- CONTACT --- */
+#contact {
+    padding: 0 10%;
+    margin-bottom: 50px;
+    min-height: 80vh;
+}
+#contact form {
+    background-color: #222; /* Changé pour coller au thème sombre */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.left-right .left, .left-right .right {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0 5px;
+    font-weight: 600;
+    color: #ccc;
+}
+#contact form input, textarea {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #555;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+#contact form input:focus, textarea:focus {
+    border-color: pink;
+    box-shadow: 0 0 5px rgba(255, 192, 203, 0.5);
+}
+iframe {
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#contact button {
+    width: fit-content;
+    padding: 10px 40px;
+    background-color: pink;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    align-self: flex-end; /* Aligne le bouton à droite */
+}
+#contact button:hover {
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px pink;
+}
+
+/* --- FOOTER --- */
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #333;
+}
+footer p {
+    color: #fff;
+}
+footer p span {
+    color: pink;
+    font-weight: bold;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+.responsive-menu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    header .menu, .btn-reservation {
+        display: none;
+    }
+
+    /* Menu Hamburger */
+    .responsive-menu {
+        width: 30px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .responsive-menu::before, .responsive-menu::after {
+        content: "";
+        height: 3px;
+        background-color: pink;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .responsive-menu.active::before {
+        transform: translateY(10.5px) rotate(45deg);
+    }
+    .responsive-menu.active::after {
+        transform: translateY(-10.5px) rotate(-45deg);
+    }
+
+    /* Affichage du Menu Mobile */
+    header .menu.responsive {
+        display: flex;
+        position: fixed; /* Fixed pour couvrir tout l'écran */
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 50px);
+        flex-direction: column;
+        background-color: rgba(34, 34, 34, 0.95);
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+    }
+    header .menu.responsive li {
+        margin: 20px 0;
+        text-align: center;
+    }
+    header .menu.responsive li a {
+        font-size: 20px;
+    }
+
+    /* Accueil Mobile */
+    #home h2 {
+        font-size: 25px;
+    }
+    #home h4 {
+        font-size: 30px;
+    }
+    .home-btn {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    /* Barre de recherche Mobile */
+    .find_trip {
+        width: 90%;
+        height: auto; /* Corrigé : La box s'adapte au contenu */
+        padding-bottom: 20px;
+        bottom: -80px;
+    }
+    .find_trip form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .find_trip form div, .find_trip form input[type="submit"] {
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    /* A propos Mobile */
+    #a-propos {
+        margin-top: 150px;
+    }
+    .img-desc {
+        flex-direction: column;
+    }
+    .img-desc .left, .img-desc .right {
+        width: 100%;
+    }
+    .img-desc .left::after {
+        display: none; /* Retire le carré rose décoratif sur mobile pour éviter les décalages */
+    }
+
+    /* Contact Mobile - LA CORRECTION ICI */
+    #contact {
+        padding: 0 5%;
+    }
+    .left-right {
+        flex-direction: column; /* Passe les colonnes l'une sous l'autre */
+        gap: 15px;
+    }
+    .left-right .left, .left-right .right {
+        width: 100%; /* Prend 100% de la largeur du formulaire */
+    }
+    #contact button {
+        align-self: center; /* Centre le bouton sur mobile */
+        width: 100%;
+    }
+}
