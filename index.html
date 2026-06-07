@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maison de voyages ultra premium : séjours privés, destinations iconiques, expériences exclusives et conciergerie sur mesure.">
+    <link rel="stylesheet" href="style.css">
+    <title>Air Travel Privé | Voyages ultra premium</title>
+</head>
+<body data-page="accueil">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+            <span>Air</span> Travel <strong>Privé</strong>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="menu">
+                <li><a href="index.html" data-link="accueil">Accueil</a></li>
+                <li><a href="destinations.html" data-link="destinations">Destinations</a></li>
+                <li><a href="experiences.html" data-link="experiences">Expériences</a></li>
+                <li><a href="contact.html" data-link="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="btn-header">Créer mon voyage</a>
+        <button class="responsive-menu" type="button" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero hero-home">
+        <div class="hero-background">
+            <img src="images/hero-dubai.webp" alt="Skyline de Dubaï de nuit avec tours illuminées">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content reveal">
+            <span class="eyebrow">Maison de voyages confidentiels</span>
+            <h1>Voyages d’exception pour esprits libres.</h1>
+            <p>
+                Des séjours privés, pensés dans les moindres détails : hôtels iconiques,
+                expériences rares, conciergerie premium et itinéraires entièrement sur mesure.
+            </p>
+            <div class="hero-actions">
+                <a href="destinations.html" class="btn-primary">Explorer les destinations</a>
+                <a href="experiences.html" class="btn-secondary">Découvrir l’expérience</a>
+            </div>
+        </div>
+
+        <div class="hero-stats reveal">
+            <div>
+                <strong>42</strong>
+                <span>destinations privées</span>
+            </div>
+            <div>
+                <strong>24/7</strong>
+                <span>conciergerie voyage</span>
+            </div>
+            <div>
+                <strong>100%</strong>
+                <span>séjours sur mesure</span>
+            </div>
+        </div>
+
+        <div class="find-trip reveal">
+            <form action="contact.html">
+                <div>
+                    <label for="destination">Destination rêvée</label>
+                    <input type="text" id="destination" name="destination" placeholder="Paris, Dubaï, Tokyo...">
+                </div>
+                <div>
+                    <label for="style">Style de voyage</label>
+                    <select id="style" name="style">
+                        <option value="">Choisir une expérience</option>
+                        <option>City break premium</option>
+                        <option>Voyage romantique</option>
+                        <option>Culture & patrimoine</option>
+                        <option>Retraite bien-être</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Départ souhaité</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <button type="submit">Composer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SIGNATURE -->
+    <section id="signature" class="section signature-section">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Notre signature</span>
+            <h2>Une expérience de voyage pensée comme une maison de luxe.</h2>
+            <p>
+                Nous ne vendons pas une simple destination. Nous créons une atmosphère,
+                un rythme, des adresses confidentielles et une organisation invisible mais impeccable.
+            </p>
+        </div>
+
+        <div class="signature-grid">
+            <div class="signature-video reveal">
+                <video src="images/about-video.mp4" autoplay loop muted playsinline></video>
+                <div class="video-badge">
+                    <strong>Immersion</strong>
+                    <span>séjours scénarisés</span>
+                </div>
+            </div>
+
+            <div class="signature-content reveal">
+                <h3>Le voyage commence avant le départ.</h3>
+                <p>
+                    Chaque projet démarre par une vraie compréhension de vos envies : rythme,
+                    budget, style d’hôtel, niveau d’accompagnement, envies culinaires, activités,
+                    moments privés et détails qui rendent le séjour mémorable.
+                </p>
+
+                <div class="signature-list">
+                    <article>
+                        <span>01</span>
+                        <div>
+                            <h4>Brief personnalisé</h4>
+                            <p>Nous cernons votre vision, vos priorités et votre niveau d’exigence.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <div>
+                            <h4>Itinéraire éditorialisé</h4>
+                            <p>Un programme clair, élégant et facile à suivre, sans surcharge inutile.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <div>
+                            <h4>Conciergerie discrète</h4>
+                            <p>Transferts, réservations, expériences privées et assistance pendant le séjour.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS PREVIEW -->
+    <section id="popular-destination" class="section destinations-preview">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Collections privées</span>
+            <h2>Destinations iconiques, version confidentielle.</h2>
+            <p>Quelques inspirations pour montrer un vrai rendu agence premium dans ton portfolio.</p>
+        </div>
+
+        <div class="destination-grid">
+            <article class="destination-card large-card reveal">
+                <img src="images/paris.webp" alt="Arc de Triomphe à Paris au coucher du soleil">
+                <div class="card-content">
+                    <span>France · Culture & gastronomie</span>
+                    <h3>Paris confidentiel</h3>
+                    <p>Palaces, tables étoilées, visite privée du Louvre et soirée sur les toits.</p>
+                    <a href="destinations.html">Voir la collection</a>
+                </div>
+            </article>
+
+            <article class="destination-card reveal">
+                <img src="images/tokyo.webp" alt="Sanctuaire japonais traditionnel dans un jardin">
+                <div class="card-content">
+                    <span>Japon · Tradition & futurisme</span>
+                    <h3>Tokyo secret</h3>
+                    <p>Ryokan, omakase, temples cachés et quartiers néon.</p>
+                    <a href="destinations.html">Découvrir</a>
+                </div>
+            </article>
+
+            <article class="destination-card reveal">
+                <img src="images/miami.webp" alt="Skyline de Miami de nuit depuis l'eau">
+                <div class="card-content">
+                    <span>USA · Riviera urbaine</span>
+                    <h3>Miami lifestyle</h3>
+                    <p>Suites ocean view, yacht privé et art contemporain.</p>
+                    <a href="destinations.html">Découvrir</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="section experience-strip">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Expériences exclusives</span>
+            <h2>Des détails qui changent tout.</h2>
+        </div>
+
+        <div class="experience-grid">
+            <article class="experience-card reveal">
+                <span>01</span>
+                <h3>Check-in privé</h3>
+                <p>Accueil personnalisé, transferts discrets et arrivée fluide dès l’aéroport.</p>
+            </article>
+            <article class="experience-card reveal">
+                <span>02</span>
+                <h3>Adresses rares</h3>
+                <p>Hôtels de caractère, rooftops confidentiels, restaurants réservés à l’avance.</p>
+            </article>
+            <article class="experience-card reveal">
+                <span>03</span>
+                <h3>Moments scénarisés</h3>
+                <p>Dîner privé, visite hors horaires, surprise romantique ou immersion locale.</p>
+            </article>
+            <article class="experience-card reveal">
+                <span>04</span>
+                <h3>Assistance 24/7</h3>
+                <p>Un contact dédié pour ajuster le séjour, gérer les imprévus et rester serein.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section journal-section">
+        <div class="journal-card reveal">
+            <div>
+                <span class="eyebrow">Carnet d’inspiration</span>
+                <h2>Un rendu premium qui valorise ton niveau d’intégration.</h2>
+            </div>
+            <p>
+                Cette version montre davantage de compétences : mise en page avancée, cartes éditoriales,
+                animations légères, responsive propre, formulaire plus réaliste et identité visuelle cohérente.
+            </p>
+            <a href="experiences.html" class="btn-primary">Voir le concept complet</a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section reveal">
+        <span class="eyebrow">Projet portfolio</span>
+        <h2>Un site vitrine premium, prêt à présenter à un recruteur ou un client.</h2>
+        <p>HTML, CSS et JavaScript simple, sans framework, mais avec une vraie direction artistique.</p>
+        <a href="contact.html" class="btn-primary">Demander un séjour</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="footer-logo"><span>Air</span> Travel <strong>Privé</strong></a>
+                <p>Voyages privés, expériences rares et séjours sur mesure.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <a href="destinations.html">Destinations</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Paris · France</p>
+                <p>contact@airtravel-prive.fr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Réalisé par <span>Gaetan Legar</span></p>
+            <p>Portfolio HTML · CSS · JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

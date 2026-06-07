@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collections de destinations premium : Paris, Dubaï, Tokyo, Miami, Rome, New York et Bavière.">
+    <link rel="stylesheet" href="style.css">
+    <title>Destinations | Air Travel Privé</title>
+</head>
+<body data-page="destinations">
+
+    <header class="site-header">
+        <a href="index.html" class="logo"><span>Air</span> Travel <strong>Privé</strong></a>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="menu">
+                <li><a href="index.html" data-link="accueil">Accueil</a></li>
+                <li><a href="destinations.html" data-link="destinations">Destinations</a></li>
+                <li><a href="experiences.html" data-link="experiences">Expériences</a></li>
+                <li><a href="contact.html" data-link="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn-header">Créer mon voyage</a>
+        <button class="responsive-menu" type="button" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </header>
+
+    <section class="page-hero small-hero">
+        <div class="hero-background">
+            <img src="images/louvre.webp" alt="Pyramide du Louvre illuminée de nuit">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="page-hero-content reveal">
+            <span class="eyebrow">Collections privées</span>
+            <h1>Choisir une destination, c’est choisir une émotion.</h1>
+            <p>Une page plus complète pour ton portfolio : filtres, cartes détaillées, prix indicatifs et niveau d’expérience.</p>
+        </div>
+    </section>
+
+    <section class="section filter-section">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Sélection</span>
+            <h2>Nos voyages signature</h2>
+            <p>Clique sur les filtres pour afficher les collections selon le style de séjour.</p>
+        </div>
+
+        <div class="filters reveal" aria-label="Filtres destinations">
+            <button type="button" class="filter-btn active" data-filter="all">Tout voir</button>
+            <button type="button" class="filter-btn" data-filter="culture">Culture</button>
+            <button type="button" class="filter-btn" data-filter="city">City break</button>
+            <button type="button" class="filter-btn" data-filter="romance">Romance</button>
+            <button type="button" class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+        </div>
+
+        <div class="destination-catalog">
+            <article class="catalog-card reveal" data-category="culture romance city">
+                <img src="images/paris.webp" alt="Arc de Triomphe à Paris">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>France</span>
+                        <strong>4 jours</strong>
+                    </div>
+                    <h3>Paris confidentiel</h3>
+                    <p>Palace, chef privé, visite du Louvre avant ouverture et croisière champagne.</p>
+                    <ul>
+                        <li>Transfert privé inclus</li>
+                        <li>Visite culturelle exclusive</li>
+                        <li>Table gastronomique</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>1 490 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="city lifestyle">
+                <img src="images/hero-dubai.webp" alt="Skyline de Dubaï de nuit">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>Émirats</span>
+                        <strong>6 jours</strong>
+                    </div>
+                    <h3>Dubaï skyline escape</h3>
+                    <p>Suite panoramique, désert privé, rooftop, spa et expérience yacht au coucher du soleil.</p>
+                    <ul>
+                        <li>Désert privé</li>
+                        <li>Rooftop réservé</li>
+                        <li>Conciergerie 24/7</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>2 850 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="culture city">
+                <img src="images/tokyo.webp" alt="Sanctuaire japonais traditionnel">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>Japon</span>
+                        <strong>8 jours</strong>
+                    </div>
+                    <h3>Tokyo secret</h3>
+                    <p>Ryokan, omakase, cérémonie du thé, quartiers design et temple hors des circuits classiques.</p>
+                    <ul>
+                        <li>Guide local privé</li>
+                        <li>Expérience culinaire</li>
+                        <li>Immersion traditionnelle</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>3 200 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="lifestyle romance">
+                <img src="images/miami.webp" alt="Skyline de Miami de nuit">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>États-Unis</span>
+                        <strong>5 jours</strong>
+                    </div>
+                    <h3>Miami ocean life</h3>
+                    <p>Ocean drive premium, yacht privé, art district, beach club et table latine haut de gamme.</p>
+                    <ul>
+                        <li>Yacht privé</li>
+                        <li>Suite vue océan</li>
+                        <li>Expérience art & design</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>2 390 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="city lifestyle">
+                <img src="images/new-york.webp" alt="Rue de New York avec taxis jaunes">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>États-Unis</span>
+                        <strong>5 jours</strong>
+                    </div>
+                    <h3>New York editorial</h3>
+                    <p>Hôtel iconique, Broadway, shopping privé, rooftop et shooting photo urbain.</p>
+                    <ul>
+                        <li>Shopping advisor</li>
+                        <li>Broadway premium</li>
+                        <li>Shooting photo</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>2 150 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="culture romance">
+                <img src="images/rome.webp" alt="Colisée de Rome">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>Italie</span>
+                        <strong>4 jours</strong>
+                    </div>
+                    <h3>Rome éternelle</h3>
+                    <p>Colisée, atelier culinaire, Vespa privée, hôtel historique et dîner sur terrasse.</p>
+                    <ul>
+                        <li>Guide historien</li>
+                        <li>Dîner rooftop</li>
+                        <li>Expérience Vespa</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>1 780 €</strong>
+                    </div>
+                </div>
+            </article>
+
+            <article class="catalog-card reveal" data-category="romance culture">
+                <img src="images/baviere.webp" alt="Château en Bavière au coucher du soleil">
+                <div class="catalog-content">
+                    <div class="catalog-topline">
+                        <span>Allemagne</span>
+                        <strong>4 jours</strong>
+                    </div>
+                    <h3>Bavière royale</h3>
+                    <p>Château, route alpine, dîner romantique et lodge de charme avec vue montagne.</p>
+                    <ul>
+                        <li>Route panoramique</li>
+                        <li>Lodge premium</li>
+                        <li>Expérience romantique</li>
+                    </ul>
+                    <div class="price-line">
+                        <span>À partir de</span>
+                        <strong>1 650 €</strong>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section cta-section reveal">
+        <span class="eyebrow">Sur mesure</span>
+        <h2>Tu ne trouves pas la bonne destination ? On la compose.</h2>
+        <p>Le vrai luxe, c’est un voyage adapté à ton rythme, pas une formule copiée-collée.</p>
+        <a href="contact.html" class="btn-primary">Créer un itinéraire</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div><a href="index.html" class="footer-logo"><span>Air</span> Travel <strong>Privé</strong></a><p>Voyages privés, expériences rares et séjours sur mesure.</p></div>
+            <div><h4>Navigation</h4><a href="index.html">Accueil</a><a href="experiences.html">Expériences</a><a href="contact.html">Contact</a></div>
+            <div><h4>Contact</h4><p>Paris · France</p><p>contact@airtravel-prive.fr</p></div>
+        </div>
+        <div class="footer-bottom"><p>Réalisé par <span>Gaetan Legar</span></p><p>Portfolio HTML · CSS · JavaScript</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
